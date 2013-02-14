@@ -32,6 +32,9 @@ namespace PHPGoogleMaps;
 
 class Map {
 
+  const UNITS_IMPERIAL = 'IMPERIAL';
+  const UNITS_METRIC = 'METRIC';
+
 	/**
 	 * Map ID
 	 *
@@ -1256,7 +1259,7 @@ class Map {
 	 * @return void
 	 */
 	public function setUnitsMetric() {
-		$this->setUnits( 'METRIC' );
+		$this->setUnits( self::UNITS_METRIC );
 	}
 
 	/**
@@ -1265,7 +1268,7 @@ class Map {
 	 * @return void
 	 */
 	public function setUnitsImperial() {
-		$this->setUnits( 'IMPERIAL' );
+		$this->setUnits( self::UNITS_IMPERIAL );
 	}
 
 	/**

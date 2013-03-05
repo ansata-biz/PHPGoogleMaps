@@ -2372,7 +2372,7 @@ EEE;
 	  			}
 				if ( $marker->shadow instanceof \PHPGoogleMaps\Overlay\MarkerIcon ) {
 					if ( ( $shadow_id = array_search( $marker->shadow, $this->marker_icons ) ) !== false ) {
-		  				$marker->_shadow_id = count( $this->marker_icons ) - 1;
+              $marker->_shadow_id = $shadow_id;
 		  			}
 		  			else {
 			  			$this->marker_icons[] = $marker->shadow;
